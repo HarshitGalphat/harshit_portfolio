@@ -45,7 +45,7 @@ a:hover {
 }
 #home::before {
     content: "";
-    background-image: url("road.jpg");
+    background-image: url("backgrnd.jpg");
     position: fixed;
     background-repeat: no-repeat;
     left: 0%;
