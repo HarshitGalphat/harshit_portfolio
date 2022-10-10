@@ -54,7 +54,7 @@ a:hover {
     width: 100%;
     height: 100vh;
     z-index: -5;
-    opacity: 0.9;
+/*     opacity: 0.9; */
 }
 #navigation {
     list-style: none;
