@@ -27,16 +27,63 @@ h2 {
     font-size: 18px;
 }
 nav {
-    background-color: rgb(10, 10, 10);
+    position: fixed;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 50px;
+    background-color: black;
+    box-shadow: 0px 0px 9px white;
+    /* border-bottom: 1px solid white; */
+    font-size: larger;
+    z-index: 4;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin-left: 20px;
+    font-family: cursive;
+}
+
+#a {
+    /* transform: ; */
+    color: red;
+    font-size: 40px;
+    padding-bottom: 10px;
+    /* animation-name: up; */
+    /* animation-delay: 10s; */
+    /* animation-duration: 4s; */
+    /* animation-timing-function: linear; */
+}
+
+/* @keyframe up{
+    0%{
+        transform:translatey(10)
+    }
+    50%{
+        transform:translatey(0)
+    }
+    100%{
+        transform:translatey(-10)
+    }
+} */
+#menu {
+    margin-right: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    font-weight: bold;
+}
+
+ul a {
+    text-decoration: none;
     color: whitesmoke;
-    position: fixed;
-    /* overflow: hidden; */
-    z-index: 1;
-    transition: transform 2s linear;
 }
 a:hover {
     color: rgb(227, 227, 236);
@@ -56,15 +103,6 @@ a:hover {
     height: 100vh;
     z-index: -5;
 /*     opacity: 0.9; */
-}
-#navigation {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding-left: 15px;
-    font-size: 21px;
-    font-family: monospace;
-    font-weight: bold;
 }
 a {
     text-decoration: none;
