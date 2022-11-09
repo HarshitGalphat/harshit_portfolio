@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
 #homepage {
     /* position: absolute; */
@@ -17,6 +17,7 @@
     z-index: -1;
     gap: 20px;
     color: white;
+    font-family: sans-serif;
 }
 h2 {
     font-size: 33px;
@@ -46,28 +47,33 @@ nav {
     margin-left: 20px;
     color: white;
     font-family: cursive;
+    cursor: pointer;
 }
 #a {
-    /* transform: ; */
     color: red;
-    font-size: 40px;
-    padding-bottom: 10px;
-    /* animation-name: up; */
-    /* animation-delay: 10s; */
-    /* animation-duration: 4s; */
-    /* animation-timing-function: linear; */
+    font-size: 00px;
+    animation: harshit 2s linear 1s 1 forwards;
+    transition: all 0.2s linear 0s;
 }
-/* @keyframe up{
-    0%{
-        transform:translatey(10)
-    }
-    50%{
-        transform:translatey(0)
-    }
-    100%{
-        transform:translatey(-10)
-    }
-} */
+@keyframes harshit{
+0%{
+    font-size: 00px;
+}
+35%{
+    font-size: 40px;
+}
+70%{
+    font-size: 60px;
+}
+100%{
+padding-bottom: 11px;
+font-size: 40px;
+}
+}
+
+#a:hover{
+    transform: scale(1.2);
+}
 #menu {
     margin-right: 20px;
 }
@@ -85,7 +91,7 @@ a:hover {
     color: rgb(227, 227, 236);
     text-shadow: -10px 10px 10px white;
     /* transition: all 2s ; */
-    transform: scaleX(2);
+    /* transform: scaleX(2); */
 }
 #home::before {
     content: "";
@@ -108,6 +114,7 @@ a {
     height: 93vh;
     width: 100%;
     display: flex;
+    font-family: sans-serif;
 }
 #container1 {
     position: inherit;
@@ -277,4 +284,48 @@ footer {
     /* font-family: monospace; */
     font-weight: bold;
     /* padding-bottom: 20px; */
+}
+hr{
+    background-color: white;
+}
+@media (min-width:320px) and (max-width:980px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+    #container3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        gap: 400px;
+    }
+    #container3{
+        gap: 10px;
+        flex-wrap:inherit;
+    }
+    #about1,#image{
+        height: fit-content;
+    }
+    #about1{
+        width: 100%;
+    }
+    #container2{
+        gap: 40px;
+    }
+    #container2,#container4{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+    #contact1,#contact2{
+        width: 50%;
+        height: fit-content;
+    }
 }
