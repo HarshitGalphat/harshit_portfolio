@@ -172,7 +172,7 @@ a {
 
 #container3 {
     display: flex;
-    height: 125vh;
+    height: fit-content;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
