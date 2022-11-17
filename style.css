@@ -402,6 +402,7 @@ hr {
         width: 50%;
         height: fit-content;
         justify-content: flex-start;
+        font-size: 30px;
     }
 
     .container {
@@ -418,10 +419,17 @@ hr {
         text-align: center;
     }
     #image img{
-        height: 40vh;
+        height: 30vh;
     }
     .head{
         text-align: center;
+        font-size: 65px;
     }
-
+.item{
+    width: 50%;
+    height: 400px;
+}
+#copyright{
+    font-size: 30px;
+}
 }
