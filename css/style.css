@@ -418,6 +418,8 @@ hr {
     }
 #menu{
     margin-bottom: 10px;
+    font-size: 23px;
+    font-family: monospace;
 }
     #container3 {
         flex-direction: column;
